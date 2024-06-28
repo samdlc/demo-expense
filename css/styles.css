@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Custom modal styles */
+.custom-modal-header {
+    background-color: #4e5d6c; /* Darker header background */
+    color: #fff; /* Light text color */
+}
+
+.custom-modal-body {
+    background-color: #f7f7f7; /* Lighter body background */
+}
+
+.custom-modal-footer {
+    background-color: #eaeaea; /* Slightly darker footer background */
+    border-top: 1px solid #ddd; /* Add a border to the top of the footer */
+}
+
+.custom-modal-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+}
+
+.custom-modal-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.modal-content {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn .5s ease-out;
+}
+
+.modal-header, .modal-footer {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.close {
+    font-size: 1.4rem;
+}
+
+.form-control, .form-check-label {
+    font-weight: 400;
+}
+
+.btn {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: none;
+}
+
+/* Animation */
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Custom hover effect listgroup */
+.hover-effect:hover {
+    background-color: #f8f9fa; /* Light grey background on hover */
+    cursor: pointer;
+}
