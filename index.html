@@ -25,7 +25,7 @@
                         <!-- Current Balance -->
                         <div class="container mt-3">
                             <div class="card text-center shadow-lg"> <!-- Added larger shadow for more depth -->
-                                <div class="card-header bg-info text-white"> <!-- Changed color scheme -->
+                                <div class="card-header bg-info text-white fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4"> <!-- Changed color scheme -->
                                     Current Balance
                                 </div>
                                 <div class="card-body">
@@ -41,7 +41,7 @@
                                     <div class="card text-white bg-success">
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Total Income</h5>
-                                            <p class="card-text text-center" id="totalIncome">$0</p>
+                                            <p class="card-text text-center fs-4 fs-sm-3 fs-md-4 fs-lg-1" id="totalIncome">$0</p>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     <div class="card text-white bg-danger">
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Total Expense</h5>
-                                            <p class="card-text text-center" id="totalExpense">$0</p>
+                                            <p class="card-text text-center fs-4 fs-sm-3 fs-md-4 fs-lg-1" id="totalExpense">$0</p>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="container text-center mt-3">
-                            <button name="btnAddTransaction" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expenseModal">
+                            <button name="btnAddTransaction" type="button" class="btn btn-primary btn-lg fs-4 fs-sm-3 fs-md-4 fs-lg-1" data-bs-toggle="modal" data-bs-target="#expenseModal">
                                 Add Transaction
                             </button>
                         </div>
@@ -92,7 +92,7 @@
     </main>
     
     <footer class="">
-        <div class="container-fluid text-center mt-3"> <!-- Changed to container-fluid -->
+        <div class="container-fluid text-center mt-3 fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4"> <!-- Changed to container-fluid -->
             <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
         </div>
     </footer>
@@ -128,42 +128,42 @@
                 <form id="formExpenseModal">
                     <div class="modal-body custom-modal-body">
                         <!-- Form or content goes here -->
-                            <div class="mb-3">
-                                <label for="expenseAmount" class="form-label">Amount</label>
-                                <input type="number" class="form-control" id="amount" placeholder="Amount">
+                            <div class="col-12 mb-3">
+                                <label for="expenseAmount" class="form-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4">Amount</label>
+                                <input type="number" class="form-control fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" id="amount" placeholder="Amount">
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Type Transaction</label>
+                            <div class="col-12 mb-3">
+                                <label class="form-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4">Type Transaction</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="typeRadio" id="incomeRadio" value="income">
-                                    <label class="form-check-label" for="incomeRadio">
+                                    <input class="form-check-input fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" type="radio" name="typeRadio" id="incomeRadio" value="income">
+                                    <label class="form-check-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" for="incomeRadio">
                                         Income
                                     </label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="typeRadio" id="expenseRadio" value="expense">
-                                    <label class="form-check-label" for="expenseRadio">
+                                <div class="col-12 form-check">
+                                    <input class="form-check-input fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" type="radio" name="typeRadio" id="expenseRadio" value="expense">
+                                    <label class="form-check-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" for="expenseRadio">
                                         Expense
                                     </label>
                                 </div>
                             </div>
-                            <div id="incomeDiv" class="mb-3" >
-                                <label for="incomeSelector" class="form-label">Income made for</label>
-                                <select class="form-select" id="incomeSelector">
+                            <div id="incomeDiv" class="col-12 mb-3" >
+                                <label for="incomeSelector" class="form-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4">Income made for</label>
+                                <select class="form-select fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" id="incomeSelector">
                                 
                                     <!-- Add more income options here -->
                                 </select>
                             </div>
-                            <div id="expenseDiv" class="mb-3" hidden>
-                                <label for="expenseSelector" class="form-label">Expense made for</label>
-                                <select class="form-select" id="expenseSelector">
+                            <div id="expenseDiv" class="col-12 mb-3" hidden>
+                                <label for="expenseSelector" class="form-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4">Expense made for</label>
+                                <select class="form-select fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" id="expenseSelector">
                                 
                                     <!-- Add more expense options here -->
                                 </select>
                             </div>
-                            <div class="mb-3">
-                                <label for="description" class="form-label">Description</label>
-                                <input type="text" class="form-control" id="description" placeholder="Description of expense or income">
+                            <div class="col-12 mb-3">
+                                <label for="description" class="form-label fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4">Description</label>
+                                <input type="text" class="form-control fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4" id="description" placeholder="Description of expense or income">
                             </div>
                             
                             <!-- Add more fields as needed -->
@@ -173,8 +173,8 @@
                     <div id="error-message" hidden class="btn-danger text-center fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4 fw-bold text-white"></div>
 
                     <div class="modal-footer custom-modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button id="btnSave" type="button" class="btn custom-modal-button">Save</button>
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                        <button id="btnSave" type="button" class="btn custom-modal-button btn-lg">Save</button>
                     </div>  
                 </form>
             </div>
