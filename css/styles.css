@@ -133,6 +133,7 @@
     border-color: #007bff;
 }
 
+
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
 .pagination > .disabled > span:focus,
@@ -144,3 +145,16 @@
     background-color: #fff;
     border-color: #ddd;
 }
+
+.custom-max-w-md {
+    max-width: 28rem;
+}
+
+@media (max-width: 576px) {
+    #listGroup .list-group-item {
+      padding: 10px 15px; /* Smaller padding */
+    }
+    #listGroup {
+      margin-bottom: 20px; /* More space at the bottom */
+    }
+  }

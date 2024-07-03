@@ -225,7 +225,7 @@ function updateTransactionHistory() {
                 </div>
                 <h6 class="mt-2 mb-1">${selection}</h6>
                 <div class="d-flex justify-content-between align-items-center">
-                    <p class="fs-4 fs-sm-3 fs-md-4 fs-lg-1 my-4 text-muted mb-0">${expense.description}</p>
+                    <p class="text-muted mb-0">${expense.description}</p>
                     <button type="button" class="btn btn-danger btn-lg" onclick="deleteTransaction(${expense.id})">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 20 20">
                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
